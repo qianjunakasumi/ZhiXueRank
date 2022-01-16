@@ -17,11 +17,19 @@
 ## 如何食用
 
 1. 安装支持扩展（插件）功能的主流浏览器，例如 Edge、Chrome 等
-2. 安装 TamperMonkey [chrome 网上应用店](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+2. 安装 TamperMonkey （[chrome 网上应用店](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)）
 3. 新建用户脚本，并复制 main.js 内容到编辑器中
 4. 保存并启用脚本
 5. 打开智学网学情报告（全科），查看排名
 
+## 屏幕截图
+
+![屏幕截图](https://user-images.githubusercontent.com/53565118/149665753-8976705d-0319-4dd5-b475-7767079e7d14.png)
+
 ## 法律责任
 
 您使用本脚本前，理解并同意：我们无法预测您的行为，因此您必须为您滥用脚本而违反相关法律法规的行为负有全部法律责任
+
+## 许可证
+
+[![GitHub license](https://img.shields.io/github/license/qianjunakasumi/ZhiXueRank?style=for-the-badge)](https://github.com/qianjunakasumi/ZhiXueRank/blob/main/LICENSE)
