@@ -1,9 +1,20 @@
+// Copyright (c) 2022 qianjunakasumi <i@qianjunakasumi.ren>
+//                    qianjunakasumi <qianjunakasumi@outlook.com>
+//                    [qianjunakasumi] 千橘雫霞(https://github.com/qianjunakasumi)
+//
+//      This Source Code Form is subject to the terms of the Mozilla Public
+//      License, v. 2.0. If a copy of the MPL was not distributed with this
+//      file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
 // ==UserScript==
 // @name         智学网排行榜
-// @namespace    https://github.com/qianjunakasumi/
-// @version      0.1
-// @description  智学网排名计算
+// @namespace    ren.qianjunakasumi
+// @version      1.0.1
 // @author       qianjunakasumi
+// @description  智学网排名计算
+// @source       https://github.com/qianjunakasumi/ZhiXueRank
+// @updateURL    https://github.com/qianjunakasumi/ZhiXueRank/blob/main/main.js
+// @supportURL   https://github.com/qianjunakasumi/ZhiXueRank/issues/new/choose
 // @match        https://www.zhixue.com/activitystudy/web-report/index.html?examId=*
 // @grant        none
 // ==/UserScript==
