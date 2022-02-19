@@ -9,11 +9,12 @@
 // ==UserScript==
 // @name         智学网排行榜
 // @namespace    ren.qianjunakasumi
-// @version      1.0.1
+// @version      1.0.2
 // @author       qianjunakasumi
 // @description  智学网排名计算
 // @source       https://github.com/qianjunakasumi/ZhiXueRank
 // @updateURL    https://github.com/qianjunakasumi/ZhiXueRank/blob/main/main.js
+// @downloadURL  https://github.com/qianjunakasumi/ZhiXueRank/blob/main/main.js
 // @supportURL   https://github.com/qianjunakasumi/ZhiXueRank/issues/new/choose
 // @match        https://www.zhixue.com/activitystudy/web-report/index.html?examId=*
 // @grant        none
@@ -91,7 +92,6 @@ function display(id) {
     rankDOM.innerHTML = html;
 
     document.querySelector('#report > div > div.report > div > div').insertBefore(rankDOM, document.querySelector('#report > div > div.report > div > div > div:nth-child(2)'));
-    qianlog('现在显示班级排行榜！');
 }
 
 function patchRequest(url, xhr) {
@@ -141,10 +141,4 @@ function inject() {
 (function () {
     'use strict';
     inject();
-    qianlog('初始化成功');
 })();
-
-// Tools === Log Printer
-function qianlog(obj) {
-    console.log('%c 智学网排行榜 ', 'color: #fff; background: #000', obj);
-}
