@@ -26,6 +26,10 @@
 
 ![屏幕截图](https://user-images.githubusercontent.com/53565118/149665753-8976705d-0319-4dd5-b475-7767079e7d14.png)
 
+## 局限性
+
+[⚖️ 关于少于三科考试科目无法展示排行榜的问题 #1](https://github.com/qianjunakasumi/ZhiXueRank/issues/1)
+
 ## 实现原理
 
 劫持发挥水平学科诊断数据和班级人数的响应，通过简单计算得出排名。
