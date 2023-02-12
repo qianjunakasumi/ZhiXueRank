@@ -16,7 +16,7 @@
 // @updateURL    https://github.com/qianjunakasumi/ZhiXueRank/blob/main/main.js
 // @downloadURL  https://github.com/qianjunakasumi/ZhiXueRank/blob/main/main.js
 // @supportURL   https://github.com/qianjunakasumi/ZhiXueRank/issues/new/choose
-// @match        https://www.zhixue.com/activitystudy/web-report/index.html?examId=*
+// @match        https://www.zhixue.com/activitystudy/web-report/index.html?from=web-container_top
 // @grant        none
 // ==/UserScript==
 
