@@ -7,7 +7,7 @@
 // ==UserScript==
 // @name         智学网排行榜
 // @namespace    moe.qianjunakasumi.zhixuerank
-// @version      1.0.4
+// @version      1.0.5
 // @author       qianjunakasumi
 // @description  智学网排名计算
 // @source       https://github.com/qianjunakasumi/ZhiXueRank
@@ -110,7 +110,7 @@ function patchGetSubjectDiagnosisOnReadyStateChange(proto) {
     const code = xhr.responseURL.substring(72, 108);
     const data = JSON.parse(xhr.response);
     data.result.list.forEach(element => {
-        GLOBALDATA.addRank(code, element.subjectName, element.rationalRank);
+        GLOBALDATA.addRank(code, element.subjectName, element.myRank);
     });
     GLOBALDATA.calc(code);
 }
