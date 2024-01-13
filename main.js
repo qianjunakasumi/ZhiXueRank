@@ -54,7 +54,11 @@ const GLOBALDATA = {
                 return;
             }
 
-            GLOBALDATA.data[id].subject[k].rank = Math.trunc(e.number * e.subject[k].org / 100) + 1;
+            const percentage = e.subject[k].org;
+            const total = e.number;
+
+            const rank = Math.ceil(percentage / 100 * total);
+            GLOBALDATA.data[id].subject[k].rank = Math.min(Math.max(rank, 1), total);
         }
 
         display(id);
@@ -76,7 +80,18 @@ function display(id) {
     const keys = Object.keys(GLOBALDATA.data[id].subject);
     for (const ki in keys) {
         const k = keys[ki];
-        html += `<div style="display: inline-block; width: 50%; margin-bottom: 15px;"><div class="subject">${k}</div><div style="margin-left: 120px;"><div class="bottom"><div><span class="specific">第   </span><span class="blue">${GLOBALDATA.data[id].subject[k].rank}</span><span class="specific">   名</span></div></div></div></div>`;
+        html += `<div style="sub-item; display: inline-block; width: 50%; margin-bottom: 15px;">
+                    <div class="subject">${k}</div>
+                    <div style="margin-left: 150px;">
+                        <div class="bottom">
+                            <div>
+                                <span class="specific">第 </span>
+                                <span class="blue">${GLOBALDATA.data[id].subject[k].rank}</span>
+                                <span class="specific"> 名</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
     }
 
     html += `
