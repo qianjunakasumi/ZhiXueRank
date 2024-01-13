@@ -54,11 +54,7 @@ const GLOBALDATA = {
                 return;
             }
 
-            const percentage = e.subject[k].org;
-            const total = e.number;
-
-            const rank = Math.ceil(percentage / 100 * total);
-            GLOBALDATA.data[id].subject[k].rank = Math.min(Math.max(rank, 1), total);
+            GLOBALDATA.data[id].subject[k].rank = Math.trunc(e.number * e.subject[k].org / 100) + 1;
         }
 
         display(id);
