@@ -7,7 +7,7 @@
 // ==UserScript==
 // @name         智学网排行榜
 // @namespace    moe.qianjunakasumi.zhixuerank
-// @version      1.0.6
+// @version      1.0.7
 // @author       qianjunakasumi
 // @description  智学网排名计算
 // @source       https://github.com/qianjunakasumi/ZhiXueRank
@@ -108,10 +108,10 @@ function display(id) {
 }
 
 function patchRequest(url, xhr) {
-    if (url.indexOf('https://www.zhixue.com/zhixuebao/report/exam/getSubjectDiagnosis') !== -1) {
+    if (url.indexOf('zhixuebao/report/exam/getSubjectDiagnosis') !== -1) {
         xhr.addEventListener("load", patchGetSubjectDiagnosisOnReadyStateChange);
     }
-    if (url.indexOf('https://www.zhixue.com/zhixuebao/report/exam/getLevelTrend') !== -1) {
+    if (url.indexOf('zhixuebao/report/exam/getLevelTrend') !== -1) {
         xhr.addEventListener("load", patchGetLevelTrendOnReadyStateChange);
     }
 }
