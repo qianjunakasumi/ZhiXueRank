@@ -77,7 +77,7 @@ const GLOBALDATA = {
     },
 };
 
-function    display(id) {
+function display(id) {
     let html = `
 <div>
     <div class="general" style="padding-bottom: 0">
@@ -92,7 +92,6 @@ function    display(id) {
     const keys = Object.keys(GLOBALDATA.data[id].subject);
     for (const ki in keys) {
         const k = keys[ki];
-
         html += `<div style="sub-item; display: inline-block; width: 50%; margin-bottom: 15px;">
                     <div class="subject">${k}</div>
                     <div style="margin-left: 150px;">
