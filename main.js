@@ -7,7 +7,7 @@
 // ==UserScript==
 // @name         智学网排行榜
 // @namespace    moe.qianjunakasumi.zhixuerank
-// @version      1.0.7
+// @version      1.0.8
 // @author       qianjunakasumi
 // @description  智学网排名计算
 // @source       https://github.com/qianjunakasumi/ZhiXueRank
