@@ -65,11 +65,12 @@ const GLOBALDATA = {
                 if (delta < minDelta) {
                     finalRank = i;
                     minDelta = delta;
+                } else {
+                    break;
                 }
             }
 
             // const rank = Math.ceil(percentage / 100 * total);
-
             GLOBALDATA.data[id].subject[k].rank = finalRank;
         }
 
